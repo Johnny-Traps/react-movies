@@ -1,0 +1,20 @@
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  width: min(100%, 1480px);
+  margin: 0 auto;
+  padding: 36px clamp(18px, 3vw, 44px) 56px;
+  display: flex;
+  flex-direction: column;
+  --section-gap: 28px;
+  gap: var(--section-gap);
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding-top: 20px;
+    --section-gap: 20px;
+  }
+}
